@@ -1,0 +1,6 @@
+baseURL = 'https://montano.dev/'
+locale = 'en-us'
+title = "David Montano's Personal Website"
+[params]
+  github = 'https://github.com/ikalco'
+  email = 'david@montano.dev'
