@@ -1,4 +1,5 @@
-baseURL = "https://montano.dev/"
+# baseURL = "https://montano.dev/"
+baseURL = "http://localhost:8000/"
 locale = "en-us"
 title = "David Montano's Personal Website"
 
