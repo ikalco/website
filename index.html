@@ -1,11 +1,36 @@
-{{ define "meta" }}
-{{ $style := resources.Get "home.css" | resources.Minify }}
-<link rel="stylesheet" href="{{ $style.Permalink }}">
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+	<meta name="generator" content="Hugo 0.166.0">
+  <meta charset="utf-8">
+<title>David Montano</title>
+
+  
+
+<link rel="stylesheet" href="http://localhost:8000/home.min.css">
 <link rel="stylesheet" href="/css/fontawesome.min.css">
 <link rel="stylesheet" href="/css/brands.min.css">
-{{ end }}
 
-{{ define "main" }}
+  
+  <link rel="stylesheet" href="http://localhost:8000/base.min.css">
+</head>
+<body>
+  <header>
+  <nav>
+    <div><a href="http://localhost:8000/">Home</a></div>
+    <ul>
+      
+      <li><a href="http://localhost:8000/posts/">Posts</a></li>
+      
+      <li><a href="http://localhost:8000/scripts/">Scripts</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+
+  <main>
+  
 <div class="home">
 <div class="name">
   <h1>
@@ -28,23 +53,46 @@
 ░░░░░     ░░░░░  ░░░░░░  ░░░░ ░░░░░    ░░░░░   ░░░░░░░░ ░░░░ ░░░░░  ░░░░░░  </h1>
 </div>
 
-{{ with .Site.Params.social }}
+
 <ul>
-  {{ range sort . "weight" }}
-    {{ if .icon }}
+  
+    
       <li>
-        <a href="{{ .url | safeURL }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }} {{ if .type }}type="{{ .type }}"{{ end }}>
-          <i class="{{ .icon }}" aria-hidden="true"></i>
+        <a href="https://github.com/ikalco" aria-label="Github"   >
+          <i class="fa-brands fa-github fa-2x" aria-hidden="true"></i>
         </a>
       </li>
-    {{ else }}
+    
+  
+    
       <li>
-        <a href="{{ .url | safeURL }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }}>{{ .name }}</a>
+        <a href="https://www.linkedin.com/in/david-montano-utd/" aria-label="LinkedIn"   >
+          <i class="fa-brands fa-linkedin fa-2x" aria-hidden="true"></i>
+        </a>
       </li>
-    {{ end }}
-  {{ end }}
+    
+  
+    
+      <li>
+        <a href="mailto:david@montano.dev" aria-label="Email"   >
+          <i class="fa-solid fa-envelope fa-2x" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
 </ul>
-{{ end }}
+
 
 </div>
-{{ end }}
+
+  </main>
+
+  <footer>
+©
+
+2026
+ David Montano 
+</footer>
+
+</body>
+</html>
