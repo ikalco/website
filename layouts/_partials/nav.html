@@ -1,9 +1,10 @@
-<nav>
- <ul>
-    <li><a href="{{ urls.Ref . "/" }}">David Montano</a></li>
-    <br>
-    {{ range .Site.Sections }}
-    <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
-    {{ end }}
- </ul>
-</nav>
+<header>
+  <nav>
+    <div><a href="{{ urls.Ref . "/" }}">Home</a></div>
+    <ul>
+      {{ range .Site.Sections }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>

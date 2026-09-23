@@ -1,6 +1,26 @@
-baseURL = 'https://montano.dev/'
-locale = 'en-us'
+baseURL = "https://montano.dev/"
+locale = "en-us"
 title = "David Montano's Personal Website"
+
 [params]
-  github = 'https://github.com/ikalco'
-  email = 'david@montano.dev'
+author = "David Montano"
+email = "david@montano.dev"
+since = 2026
+
+[[params.social]]
+name = "Github"
+icon = "fa-brands fa-github fa-2x"
+weight = 1
+url = "https://github.com/ikalco"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "fa-brands fa-linkedin fa-2x"
+weight = 2
+url = "https://www.linkedin.com/in/david-montano-utd/"
+
+[[params.social]]
+name = "Email"
+icon = "fa-solid fa-envelope fa-2x"
+weight = 3
+url = "mailto:david@montano.dev"

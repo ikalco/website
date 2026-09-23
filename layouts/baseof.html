@@ -2,12 +2,19 @@
 <html lang="{{ site.Language.Locale }}" dir="{{ or site.Language.Direction `ltr` }}">
 <head>
   {{ partial "meta.html" . }}
+  {{ block "meta" . }}
+  {{ end }}
+  {{ $style := resources.Get "base.css" | resources.Minify }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
 </head>
 <body>
   {{ partial "nav.html" . }}
+
   <main>
-    {{ block "main" . }}
-    {{ end }}
+  {{ block "main" . }}
+  {{ end }}
   </main>
+
+  {{ partial "footer.html" . }}
 </body>
 </html>
